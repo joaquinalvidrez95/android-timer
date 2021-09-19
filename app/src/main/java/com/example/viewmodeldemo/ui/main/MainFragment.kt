@@ -36,7 +36,13 @@ class MainFragment : Fragment() {
             }
         })
         binding.btnStart.setOnClickListener {
-            viewModel.increaseTimer()
+            viewModel.start()
+        }
+        binding.btnPause.setOnClickListener {
+            viewModel.pause()
+        }
+        binding.btnPause.setOnClickListener {
+            viewModel.stop()
         }
     }
 }
