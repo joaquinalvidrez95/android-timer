@@ -9,5 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_timer2, MainFragment.newInstance()).commit()
     }
 }

@@ -16,6 +16,7 @@ class MainViewModel : ViewModel() {
 
         override fun onFinish() {
             _timer.value = 0
+            isRunning = false
         }
 
     }

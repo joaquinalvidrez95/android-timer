@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentTimer1"
+        android:id="@+id/fragment_timer1"
         android:name="com.example.viewmodeldemo.ui.main.MainFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/fragmentTimer2"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_timer2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,14 +20,13 @@
     </androidx.fragment.app.FragmentContainerView>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentTimer2"
-        android:name="com.example.viewmodeldemo.ui.main.MainFragment"
+        android:id="@+id/fragment_timer2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentTimer1"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_timer1"
         tools:layout="@layout/main_fragment" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
