@@ -41,7 +41,7 @@ class MainFragment : Fragment() {
         binding.btnPause.setOnClickListener {
             viewModel.pause()
         }
-        binding.btnPause.setOnClickListener {
+        binding.btnStop.setOnClickListener {
             viewModel.stop()
         }
     }

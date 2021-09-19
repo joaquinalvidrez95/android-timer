@@ -30,6 +30,8 @@ class MainViewModel : ViewModel() {
 
     fun stop() {
         cdTimer.cancel()
+        _timer.value = 0
+        isRunning = false
     }
 
     fun start() {
